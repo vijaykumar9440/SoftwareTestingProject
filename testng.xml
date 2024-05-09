@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.TestNGscripts.writtingdata_to_JSONFile"/>
+      <class name="com.ICICIBankProject.Writing_Xpath_using_CSS_selector"/>
+      <class name="com.TestNGscripts.OpenGoogle"/>
+      <class name="com.ICICIBankProject.ListingALLurlsAndStoringInJSON"/>
+      <class name="com.TestNGscripts.Handling_Basic_Authentication_pop_up_in_selenium"/>
+      <class name="com.OHRMProjecct.OrangeTest"/>
+      <class name="com.FacebookProject.Assertions_Facebook"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
