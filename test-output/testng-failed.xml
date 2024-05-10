@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNGscripts.Get_all_urls_in_page">
+      <class name="com.FacebookProject.Assertions_Facebook">
         <methods>
-          <include name="get_all_urls_of_page_and_print"/>
+          <include name="Launchapp"/>
         </methods>
-      </class> <!-- com.TestNGscripts.Get_all_urls_in_page -->
+      </class> <!-- com.FacebookProject.Assertions_Facebook -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
