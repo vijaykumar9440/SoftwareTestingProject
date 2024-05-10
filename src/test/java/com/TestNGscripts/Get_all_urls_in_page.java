@@ -28,12 +28,14 @@ public class Get_all_urls_in_page {
 	List<WebElement> listofurls= driver.findElements(By.tagName("a"));
 	
      int Listsize =listofurls.size();
-     System.out.println(Listsize);
+     System.out.println( "size of urls:-"+Listsize);
      
      for( int i=0; i < Listsize; i++)
      {
     	 System.out.println(listofurls.get(i).getText());
      }
+     
+     driver.quit();
 	
 		
 		
