@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.FacebookProject.Assertions_Facebook">
+      <class name="com.TestNGscripts.UploadFile">
         <methods>
-          <include name="Launchapp"/>
+          <include name="UploadFile"/>
         </methods>
-      </class> <!-- com.FacebookProject.Assertions_Facebook -->
+      </class> <!-- com.TestNGscripts.UploadFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -18,34 +18,31 @@ public class Get_all_urls_in_page {
 	@Test
 	public void get_all_urls_of_page_and_print()
 	{
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		 
-		driver.get("https://www.icicibank.com/");
-		
-	List<WebElement> listofurls= driver.findElements(By.tagName("a"));
+	WebDriverManager.chromedriver().setup();
+	WebDriver driver = new ChromeDriver();
+	driver.manage().window().maximize();
+	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	
-     int Listsize =listofurls.size();
-     System.out.println( "size of urls:-"+Listsize);
-     
-     for( int i=0; i < Listsize; i++)
-     {
-    	 System.out.println(listofurls.get(i).getText());
-     }
-     
-     driver.quit();
 	
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	String URL = "https://www.icicibank.com/";
+	 driver.navigate().to(URL);
+	  List <WebElement> Listofurls=driver.findElements(By.tagName("a"));
+	  int sizeofurls =Listofurls.size();
+	  System.out.println(sizeofurls);
+	  
+	  
+	  for (int i =0; i<sizeofurls;i++) {
+		  System.out.println(Listofurls.get(i).getText());
+	  }
+	  driver.quit();
+	
+	
+	
+	
+	
+	
+	
+	
 	}
 
 }
